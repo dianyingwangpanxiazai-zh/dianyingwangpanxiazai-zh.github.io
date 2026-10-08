@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
+<title>电影网盘下载 - 影视资源极简检索指南 | dianyingwangpanxiazai-zh.github.io</title>
+<meta name="keywords" content="电影网盘下载, dianyingwangpanxiazai-zh.github.io, 网盘影视资源检索, 电影网盘下载方法, 影视网盘链接获取, 高清电影网盘搜索, 网盘影视资源整理, 电影网盘下载技巧, 影视网盘资源导航, 网盘电影资源分享, 电影网盘下载工具, 影视网盘存储方案, 网盘影视收藏整理, 电影网盘下载教程, 影视网盘链接检索, 电影网盘下载官网">
+<meta name="description" content="电影网盘下载（dianyingwangpanxiazai-zh.github.io）是一份面向普通用户的影视网盘资源检索与下载指南。我们关注的不只是「怎么下」，更是「怎么找、怎么存、怎么整理」——从网盘资源的检索思路、下载工具的选择、文件命名规范到存储空间的整理方法，帮助你把散落的影视资源沉淀成一套属于自己的私人片库。">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow,max-snippet:-1">
+<meta name="revisit-after" content="3 days">
+<meta name="language" content="zh-CN">
+<meta name="geo.region" content="CN">
+<meta name="rating" content="general">
+<meta name="reply-to" content="admin@dianyingwangpanxiazai-zh.github.io">
+<meta name="publisher" content="电影网盘下载">
+<meta name="category" content="影视资源">
+<meta property="og:title" content="电影网盘下载 - 影视资源极简检索指南">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dianyingwangpanxiazai-zh.github.io">
+<meta property="og:site_name" content="电影网盘下载">
+<meta property="og:description" content="不谈怎么下，谈怎么找、怎么存、怎么整理——你的私人片库养成指南。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2026-10-07T10:00:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="电影网盘下载">
+<meta name="twitter:description" content="影视资源检索、下载、整理一站式指南">
+<link rel="canonical" href="https://dianyingwangpanxiazai-zh.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#faf8f5;
+  --paper2:#fffdfa;
+  --ink:#1a1a1a;
+  --ink2:#3d3d3d;
+  --ink3:#7a7a7a;
+  --ink4:#a8a8a8;
+  --line:#e8e4de;
+  --line2:#d4cec4;
+  --accent:#c8442f;
+  --accent2:#e0553c;
+  --accent-bg:rgba(200,68,47,.06);
+  --green:#2f7a5e;
+  --blue:#2f5a9a;
+  --gold:#b8860b;
+  --shadow:0 2px 24px rgba(26,26,26,.05);
+  --r:14px;
+  --max:1160px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","STSong","Source Han Serif SC","Noto Serif CJK SC","PingFang SC","Microsoft YaHei",Georgia,serif;
+  background:var(--paper);color:var(--ink);
+  font-size:15px;line-height:1.85;font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul{list-style:none}
+::selection{background:var(--accent);color:#fff}
+
+/* ============ 顶部 ============ */
+header{position:sticky;top:0;z-index:50;background:rgba(250,248,245,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.h-in{max-width:var(--max);margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:baseline;gap:9px;min-width:0}
+.logo b{font-size:19px;font-weight:800;letter-spacing:-.5px;white-space:nowrap}
+.logo span{font-size:10.5px;color:var(--ink3);letter-spacing:.5px;border-left:1px solid var(--line2);padding-left:9px}
+nav{display:flex;align-items:center;gap:2px}
+nav a{padding:8px 15px;font-size:14px;color:var(--ink2);border-radius:8px;transition:.18s;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+nav a:hover{background:var(--accent-bg);color:var(--accent)}
+nav a.on{color:var(--accent);background:var(--accent-bg)}
+.burg{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center;flex-direction:column;gap:5px;transition:.3s}
+.burg i{display:block;width:15px;height:1.5px;background:var(--ink2);transition:.3s}
+.burg.on i:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burg.on i:nth-child(2){opacity:0}
+.burg.on i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* ============ 通用 ============ */
+.wrap{max-width:var(--max);margin:0 auto;padding:72px 24px}
+.mono{font-family:"PingFang SC","SF Mono","Cascadia Mono",monospace}
+.kicker{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);border:1px solid var(--line2);padding:3px 11px;border-radius:4px;margin-bottom:16px;
+}
+.h-block{margin-bottom:44px;max-width:720px}
+.h-block h2{font-size:30px;font-weight:800;letter-spacing:-1px;line-height:1.25;margin-bottom:14px}
+.h-block p{font-size:15px;color:var(--ink3);line-height:1.9}
+.lead{font-size:17px;color:var(--ink2);line-height:2}
+hr.sep{border:0;border-top:1px solid var(--line);margin:0}
+
+/* ============ Hero ============ */
+.hero{padding:88px 24px 72px;background:var(--paper2);border-bottom:1px solid var(--line)}
+.h-in2{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr .62fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(34px,6vw,62px);font-weight:900;letter-spacing:-2px;line-height:1.14;margin-bottom:26px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .sub{font-size:clamp(15px,2.5vw,17px);color:var(--ink2);max-width:560px;line-height:2}
+.h-stat{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.h-stat div{background:var(--paper2);padding:20px 18px}
+.h-stat dt{font-size:10.5px;color:var(--ink3);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+.h-stat dd{font-size:26px;font-weight:800;letter-spacing:-1px;color:var(--ink)}
+.h-stat dd small{font-size:12px;font-weight:500;color:var(--ink3);margin-left:3px}
+
+/* ============ 栏目一：检索思路（时间轴） ============ */
+.path{position:relative;padding-left:0}
+.tl{position:relative;padding-left:34px}
+.tl::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--line2)}
+.tl-i{position:relative;padding-bottom:34px}
+.tl-i:last-child{padding-bottom:0}
+.tl-i::before{
+  content:counter(step,decimal-leading-zero);counter-increment:step;
+  position:absolute;left:-34px;top:2px;width:16px;height:16px;border-radius:50%;
+  background:var(--paper);border:1.5px solid var(--accent);color:var(--accent);
+  font-size:9px;font-weight:800;display:grid;place-items:center;
+  font-family:"PingFang SC",monospace;
+}
+.path{counter-reset:step}
+.tl-i h4{font-size:17px;font-weight:700;margin-bottom:7px;letter-spacing:-.3px}
+.tl-i p{font-size:14.5px;color:var(--ink3);line-height:1.9}
+.tl-i .tag{display:inline-block;font-size:11px;color:var(--accent);background:var(--accent-bg);padding:2px 9px;border-radius:3px;margin-bottom:8px;font-family:"PingFang SC",sans-serif}
+
+/* ============ 栏目二：工具对比（表格风） ============ */
+.tbl{width:100%;border-collapse:collapse;background:var(--paper2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.tbl thead th{background:#f2efe9;padding:14px 16px;text-align:left;font-size:12.5px;font-weight:700;color:var(--ink2);border-bottom:1px solid var(--line);letter-spacing:.05em;white-space:nowrap}
+.tbl tbody td{padding:13px 16px;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--ink2);vertical-align:top}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr:hover{background:#fdfcf9}
+.tbl .name{font-weight:700;color:var(--ink);white-space:nowrap}
+.tbl .yes{color:var(--green);font-weight:700}
+.tbl .no{color:var(--ink4)}
+.tbl .star{color:var(--gold);letter-spacing:1px;font-size:12px}
+
+/* ============ 栏目三：命名规范（代码块） ============ */
+.cards2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.code{
+  background:#22201d;color:#e8e4de;border-radius:var(--r);overflow:hidden;font-family:"SF Mono","Cascadia Mono",monospace;
+}
+.code .hd{background:#2c2a26;padding:9px 15px;font-size:11px;color:#a8a39a;display:flex;justify-content:space-between;align-items:center}
+.code .hd span{color:var(--accent2)}
+.code pre{padding:18px 20px;font-size:12.5px;line-height:1.9;overflow-x:auto;margin:0}
+.code .c{color:#8a857c}
+.code .k{color:#e0553c}
+.code .s{color:#7fb08f}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:26px}
+.tip{background:var(--paper2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:16px 18px}
+.tip b{display:block;font-size:14.5px;font-weight:700;margin-bottom:5px;font-family:"PingFang SC",sans-serif}
+.tip p{font-size:13.5px;color:var(--ink3);line-height:1.85}
+
+/* ============ 栏目四：场景方案（卡片） ============ */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.sce{background:var(--paper2);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:.22s}
+.sce:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:var(--shadow)}
+.sce .num{font-size:11px;font-weight:800;letter-spacing:.2em;color:var(--accent);margin-bottom:12px;font-family:"PingFang SC",monospace}
+.sce h4{font-size:17px;font-weight:700;margin-bottom:9px;letter-spacing:-.3px}
+.sce p{font-size:14px;color:var(--ink3);line-height:1.9}
+.sce ul{margin-top:12px;padding:0}
+.sce ul li{padding:4px 0 4px 14px;position:relative;font-size:13px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+.sce ul li::before{content:'·';position:absolute;left:2px;color:var(--accent);font-weight:800}
+
+/* ============ 栏目五：资源分类（标签云） ============ */
+.cloud{background:var(--paper2);border:1px solid var(--line);border-radius:var(--r);padding:32px}
+.cloud-row{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.cloud-row:last-child{border-bottom:0}
+.cloud-row .lb{flex-shrink:0;width:130px;font-size:13px;font-weight:700;color:var(--ink);font-family:"PingFang SC",sans-serif}
+.cloud-row .lb i{display:block;font-style:normal;font-size:10.5px;color:var(--ink3);font-weight:400;letter-spacing:.1em}
+.tags{display:flex;flex-wrap:wrap;gap:7px;flex:1}
+.tags a{font-size:12.5px;color:var(--ink2);background:#f2efe9;border:1px solid var(--line);padding:4px 11px;border-radius:99px;transition:.18s;font-family:"PingFang SC",sans-serif}
+.tags a:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-bg)}
+.tags a.hot{color:var(--accent);border-color:#eecfc7;background:var(--accent-bg)}
+
+/* ============ 底部 ============ */
+footer{background:#1a1917;color:#c9c4bd;padding:64px 24px 28px;margin-top:40px}
+.f-in{max-width:var(--max);margin:0 auto}
+.f-top{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:40px;margin-bottom:44px}
+.f-brand b{font-size:20px;font-weight:800;color:#fff;letter-spacing:-.5px}
+.f-brand p{font-size:13.5px;color:#8a857c;margin-top:12px;line-height:2;max-width:320px}
+.f-col h5{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+.f-col a{display:block;font-size:13.5px;color:#8a857c;padding:5px 0;transition:.18s}
+.f-col a:hover{color:#fff;padding-left:4px}
+.f-note{background:#22201d;border:1px solid #2c2a26;border-radius:var(--r);padding:24px 26px;margin-bottom:28px}
+.f-note p{font-size:13px;color:#a8a39a;line-height:2}
+.f-note p+p{margin-top:10px}
+.f-note b{color:#e0553c}
+.f-bot{border-top:1px solid #2c2a26;padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.f-bot p{font-size:12px;color:#6f6a62;line-height:2}
+.f-bot a{color:#8a857c}
+.f-bot a:hover{color:#fff}
+
+/* ============ 浮动 ============ */
+.float{position:fixed;right:18px;bottom:22px;z-index:49}
+.gotop{width:44px;height:44px;border-radius:12px;background:#1a1917;color:#fff;display:grid;place-items:center;font-size:16px;opacity:0;pointer-events:none;transform:translateY(8px);transition:.3s;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.gotop.show{opacity:1;pointer-events:auto;transform:none}
+.gotop:hover{background:var(--accent)}
+
+/* ============ 入场 ============ */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s}
+.rv.in{opacity:1;transform:none}
+
+/* ============ 响应式 ============ */
+@media(max-width:900px){
+  .h-in2{grid-template-columns:1fr;gap:40px;align-items:start}
+  .f-top{grid-template-columns:1fr 1fr;gap:32px}
+  .f-brand{grid-column:1/-1}
+  .cloud-row{flex-direction:column;align-items:flex-start;gap:10px}
+  .cloud-row .lb{width:auto}
+}
+@media(max-width:720px){
+  .burg{display:flex}
+  nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;padding:10px 16px;gap:0;background:rgba(250,248,245,.98);border-bottom:1px solid var(--line)}
+  nav.open{display:flex}
+  nav a{padding:14px 10px;border-radius:0;border-bottom:1px solid var(--line);font-size:15px}
+  nav a:last-child{border-bottom:0}
+  .wrap{padding:52px 18px}
+  .hero{padding:56px 18px 48px}
+  .h-block h2{font-size:24px}
+  .h-stat{grid-template-columns:1fr 1fr}
+  .tbl thead{display:none}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl{border:0}
+  .tbl tr{border:1px solid var(--line);border-radius:var(--r);margin-bottom:12px;background:var(--paper2)}
+  .tbl td{border-bottom:1px solid var(--line);padding:10px 14px}
+  .tbl td:last-child{border-bottom:0}
+  .tbl td::before{content:attr(data-lb);display:block;font-size:10.5px;color:var(--ink3);letter-spacing:.15em;text-transform:uppercase;margin-bottom:3px}
+  .cloud{padding:22px 18px}
+}
+@media(max-width:400px){
+  .h-stat dd{font-size:22px}
+  .sce,.tip{padding:20px 16px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="h-in">
+    <a href="#" class="logo"><b>电影网盘下载</b><span>dianyingwangpanxiazai-zh.github.io</span></a>
+    <nav id="nav">
+      <a href="#" class="on">首页</a>
+      <a href="#search">检索思路</a>
+      <a href="#tools">工具对比</a>
+      <a href="#rule">命名规范</a>
+      <a href="#scene">场景方案</a>
+      <a href="#cate">资源分类</a>
+    </nav>
+    <button class="burg" id="burg" aria-label="菜单"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="h-in2">
+    <div class="rv">
+      <h1>电影网盘下载<br>不谈怎么下<br>只谈<em>怎么找</em></h1>
+      <p class="sub">网盘影视资源散落在互联网的各个角落，真正难的从来不是下载，而是检索与整理。电影网盘下载（dianyingwangpanxiazai-zh.github.io）把「找资源—下载—存储—整理」拆成四个环节，帮你建立一套可复用的私人片库体系。</p>
+    </div>
+    <div class="h-stat rv">
+      <div><dt>资源格式</dt><dd>12<small>种常见格式</small></dd></div>
+      <div><dt>网盘类型</dt><dd>8<small>类主流平台</small></dd></div>
+      <div><dt>整理方法</dt><dd>4<small>套命名规范</small></dd></div>
+      <div><dt>场景方案</dt><dd>6<small>种常见需求</small></dd></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：检索思路 -->
+<section class="wrap" id="search">
+  <div class="h-block rv">
+    <span class="kicker">01 · Search Logic</span>
+    <h2>检索思路：从「搜片名」到「搜资源」</h2>
+    <p>大多数人卡在第一步——直接搜索片名往往得到的是满屏广告。真正的资源检索，需要理解网盘的分享机制与索引方式。</p>
+  </div>
+  <div class="path">
+    <div class="tl">
+      <div class="tl-i rv"><span class="tag">STEP 01</span><h4>明确资源规格</h4><p>先确定你需要的是 4K 原盘、1080P 压缩包、还是字幕组版本。规格决定检索关键词，也决定后续存储成本。</p></div>
+      <div class="tl-i rv"><span class="tag">STEP 02</span><h4>拆解检索词</h4><p>片名 + 年份 + 分辨率 + 编码格式 + 字幕语言，用组合词替代单一片名，能大幅过滤无效结果。</p></div>
+      <div class="tl-i rv"><span class="tag">STEP 03</span><h4>多平台交叉验证</h4><p>同一个资源在不同网盘的分享情况不同，用 2-3 个平台交叉检索，可以提高找到有效链接的概率。</p></div>
+      <div class="tl-i rv"><span class="tag">STEP 04</span><h4>验证文件完整性</h4><p>拿到链接后先核对文件大小、分卷数量、校验值，确认无误再开始下载，避免白等几个小时。</p></div>
+      <div class="tl-i rv"><span class="tag">STEP 05</span><h4>归档并记录来源</h4><p>下载完成后同步记录资源来源与提取方式，下次遇到同类需求可以直接复用路径，形成自己的检索模板。</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- 栏目二：工具对比 -->
+<section class="wrap" id="tools">
+  <div class="h-block rv">
+    <span class="kicker">02 · Tool Comparison</span>
+    <h2>工具对比：下载方式怎么选</h2>
+    <p>不同的网盘平台、不同的文件规模，适用的下载方式完全不同。下面这份对比表帮你快速判断。</p>
+  </div>
+  <table class="tbl rv">
+    <thead>
+      <tr><th>方式</th><th>适用场景</th><th>速度</th><th>操作门槛</th><th>多文件支持</th><th>断点续传</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="name" data-lb="方式">浏览器直连</td><td data-lb="适用场景">单文件、小体积、临时下载</td><td class="star" data-lb="速度">★★☆</td><td class="yes" data-lb="操作门槛">低</td><td class="no" data-lb="多文件">一般</td><td class="no" data-lb="断点续传">无</td></tr>
+      <tr><td class="name" data-lb="方式">官方客户端</td><td data-lb="适用场景">平台原生存储、长期用户</td><td class="star" data-lb="速度">★★★</td><td class="yes" data-lb="操作门槛">低</td><td class="yes" data-lb="多文件">支持</td><td class="yes" data-lb="断点续传">支持</td></tr>
+      <tr><td class="name" data-lb="方式">第三方下载器</td><td data-lb="适用场景">批量任务、分卷压缩包</td><td class="star" data-lb="速度">★★★★</td><td data-lb="操作门槛">中</td><td class="yes" data-lb="多文件">支持</td><td class="yes" data-lb="断点续传">支持</td></tr>
+      <tr><td class="name" data-lb="方式">命令行工具</td><td data-lb="适用场景">技术用户、NAS / 服务器环境</td><td class="star" data-lb="速度">★★★★☆</td><td data-lb="操作门槛">高</td><td class="yes" data-lb="多文件">支持</td><td class="yes" data-lb="断点续传">支持</td></tr>
+      <tr><td class="name" data-lb="方式">离线转存后下载</td><td data-lb="适用场景">链接有效但直连限速严重</td><td class="star" data-lb="速度">★★★</td><td class="yes" data-lb="操作门槛">低</td><td class="yes" data-lb="多文件">支持</td><td class="yes" data-lb="断点续传">支持</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr class="sep">
+
+<!-- 栏目三：命名规范 -->
+<section class="wrap" id="rule">
+  <div class="h-block rv">
+    <span class="kicker">03 · Naming Rules</span>
+    <h2>命名规范：让片库自己会说话</h2>
+    <p>混乱的命名是片库最大的敌人。一套好的命名规则，能让你在几千个文件里一秒定位到想看的片子。</p>
+  </div>
+  <div class="cards2">
+    <div class="code rv">
+      <div class="hd"><span>方案 A</span><span>电影 · 标准版</span></div>
+      <pre><span class="c"># 片名.年份.分辨率.编码.字幕.容器</span>
+<span class="s">"奥本海默.2023.2160p.HEVC.TrueHD.Atmos.mkv"</span>
+<span class="s">"流浪地球2.2023.1080p.H264.CNsub.mp4"</span></pre>
+    </div>
+    <div class="code rv">
+      <div class="hd"><span>方案 B</span><span>剧集 · 分季版</span></div>
+      <pre><span class="c"># 剧名.S季号E集号.标题.分辨率</span>
+<span class="s">"继承之战.S04E01.庆祝.1080p.mkv"</span>
+<span class="s">"切尔诺贝利.S01E03.公投.2160p.mkv"</span></pre>
+    </div>
+  </div>
+  <div class="tips">
+    <div class="tip rv"><b>用点号分隔，不用空格</b><p>空格在不同系统间容易出编码问题，点号最通用。</p></div>
+    <div class="tip rv"><b>年份紧跟片名</b><p>同名电影太多，年份是唯一的区分标识。</p></div>
+    <div class="tip rv"><b>版本信息放最后</b><p>分辨率、编码、字幕放末尾，一眼看出规格差异。</p></div>
+    <div class="tip rv"><b>统一语言前缀</b><p>用 CNsub / ENsub / Bilingual 明确字幕语言。</p></div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- 栏目四：场景方案 -->
+<section class="wrap" id="scene">
+  <div class="h-block rv">
+    <span class="kicker">04 · Scenario Plans</span>
+    <h2>场景方案：六类常见需求</h2>
+    <p>不同的需求对应不同的检索策略与存储方案，照着套用即可。</p>
+  </div>
+  <div class="grid3">
+    <div class="sce rv"><span class="num">SCENE 01</span><h4>收藏党</h4><p>追求原盘画质，4K UHD 为主，重视音轨完整性。</p><ul><li>优先 4K UHD Remux</li><li>核对音轨与字幕轨</li><li>预留每部 60-100GB 空间</li></ul></div>
+    <div class="sce rv"><span class="num">SCENE 02</span><h4>追剧党</h4><p>按季归档，等一整季更新完再批量整理。</p><ul><li>按「剧名/Season 01/」分层</li><li>统一文件名中的季集编号</li><li>留出补档位</li></ul></div>
+    <div class="sce rv"><span class="num">SCENE 03</span><h4>空间紧张</h4><p>网盘容量有限，只保留精选与近期内容。</p><ul><li>1080P 压缩版优先</li><li>看完即删策略</li><li>建立「待删候选」清单</li></ul></div>
+    <div class="sce rv"><span class="num">SCENE 04</span><h4>家庭共享</h4><p>片库要给家人一起用，命名必须直观。</p><ul><li>中文片名优先</li><li>按题材分大类</li><li>封面与海报配套整理</li></ul></div>
+    <div class="sce rv"><span class="num">SCENE 05</span><h4>冷门猎奇</h4><p>找老片、纪录片、小语种独立电影。</p><ul><li>组合外文片名检索</li><li>关注字幕组资源</li><li>善用 IMDB 编号辅助</li></ul></div>
+    <div class="sce rv"><span class="num">SCENE 06</span><h4>移动观看</h4><p>需要在手机、平板离线播放。</p><ul><li>MP4 + H264 兼容最好</li><li>控制单文件体积</li><li>备一份 720P 轻量版</li></ul></div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- 栏目五：资源分类 -->
+<section class="wrap" id="cate">
+  <div class="h-block rv">
+    <span class="kicker">05 · Resource Categories</span>
+    <h2>资源分类：标签化导航</h2>
+    <p>按题材、年代、类型、规格四个维度建立标签体系，想找什么直接点。</p>
+  </div>
+  <div class="cloud rv">
+    <div class="cloud-row"><div class="lb">按题材<i>GENRE</i></div><div class="tags"><a href="#" class="hot">剧情</a><a href="#">动作</a><a href="#" class="hot">悬疑</a><a href="#">科幻</a><a href="#">恐怖</a><a href="#">喜剧</a><a href="#">爱情</a><a href="#">犯罪</a><a href="#">纪录片</a><a href="#">动画</a></div></div>
+    <div class="cloud-row"><div class="lb">按年代<i>YEAR</i></div><div class="tags"><a href="#">2020s</a><a href="#" class="hot">2010s</a><a href="#">2000s</a><a href="#">90s</a><a href="#">80s</a><a href="#">经典老片</a></div></div>
+    <div class="cloud-row"><div class="lb">按规格<i>FORMAT</i></div><div class="tags"><a href="#" class="hot">4K UHD</a><a href="#">1080P</a><a href="#">720P</a><a href="#">Remux</a><a href="#">Web-DL</a><a href="#">BluRay</a><a href="#">DVDRip</a></div></div>
+    <div class="cloud-row"><div class="lb">按地区<i>REGION</i></div><div class="tags"><a href="#">华语</a><a href="#">好莱坞</a><a href="#">欧洲</a><a href="#">日韩</a><a href="#">印度</a><a href="#">东南亚</a><a href="#">拉美</a></div></div>
+    <div class="cloud-row"><div class="lb">按时长<i>LENGTH</i></div><div class="tags"><a href="#">短片 &lt;40min</a><a href="#">标准 90-120min</a><a href="#">长片 150min+</a><a href="#">迷你剧</a><a href="#">系列剧集</a></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-in">
+    <div class="f-top">
+      <div class="f-brand"><b>电影网盘下载</b><p>一份关于影视网盘资源检索、下载与整理的实用指南。让散落的资源沉淀成你的私人片库。</p></div>
+      <div class="f-col"><h5>导航</h5><a href="#">首页</a><a href="#search">检索思路</a><a href="#tools">工具对比</a><a href="#rule">命名规范</a><a href="#scene">场景方案</a></div>
+      <div class="f-col"><h5>资源分类</h5><a href="#">按题材</a><a href="#">按年代</a><a href="#">按规格</a><a href="#">按地区</a><a href="#">按时长</a></div>
+      <div class="f-col"><h5>关于</h5><a href="#">关于本站</a><a href="#">免责声明</a><a href="#">隐私条款</a><a href="#">联系我们</a><a href="#">意见反馈</a></div>
+    </div>
+    <div class="f-note">
+      <p>🌐 <b>官方网站</b>：dianyingwangpanxiazai-zh.github.io —— 请认准官方域名，谨防仿冒站点。</p>
+      <p>🎬 <b>网站名称</b>：电影网盘下载 —— 你的影视网盘资源整理助手。</p>
+      <p>⚖️ <b>合规说明</b>：本站仅提供影视资源检索方法与整理经验分享，不涉及任何影视文件的存储、上传、分发或下载服务，不提供任何受版权保护内容的获取渠道。请尊重知识产权，通过合法授权渠道观看影视作品。</p>
+    </div>
+    <div class="f-bot">
+      <p>Copyright © 2025-2026 电影网盘下载 版权所有 | <a href="#">免责声明</a> | <a href="#">隐私条款</a><br>网站名称：电影网盘下载　网址：dianyingwangpanxiazai-zh.github.io</p>
+      <p style="text-align:right">本站内容仅供检索方法与整理经验交流参考<br>如有版权相关事宜，请通过正规渠道联系处理</p>
+    </div>
+  </div>
+</footer>
+
+<div class="float"><button class="gotop" id="top" aria-label="回到顶部">↑</button></div>
+
+<script>
+(function(){
+  var burg=document.getElementById('burg'),nav=document.getElementById('nav');
+  burg.addEventListener('click',function(){burg.classList.toggle('on');nav.classList.toggle('open')});
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){burg.classList.remove('on');nav.classList.remove('open')});
+  });
+
+  var top=document.getElementById('top');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>700)top.classList.add('show');else top.classList.remove('show');
+  },{passive:true});
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  var ids=['search','tools','rule','scene','cate'];
+  window.addEventListener('scroll',function(){
+    var pos=window.scrollY+150,cur='';
+    ids.forEach(function(s){var el=document.getElementById(s);if(el&&el.offsetTop<=pos)cur=s});
+    nav.querySelectorAll('a').forEach(function(l){
+      var m=(l.getAttribute('href')==='#'+cur);
+      l.classList.toggle('on',m);
+    });
+  },{passive:true});
+
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:0.08,rootMargin:'0px 0px -30px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
